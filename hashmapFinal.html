@@ -1,0 +1,71 @@
+<html>
+<script>
+	var hashTable1 = {};
+		hashTable1["AH"] = "Alumni Hall";
+		hashTable1["AA"] = "Architecture Building";
+		hashTable1["AC"] = "Athletics Building";
+		hashTable1["AP"] = "Azrieli Pavillion";
+		hashTable1["AT"] = "Azrieli Theater";
+		hashTable1["IH"] = "Carleton Ice House";
+		hashTable1["TT"] = "Carleton Technology & Training Center (CTTC)";
+		hashTable1["CB"] = "Canal Building";
+		hashTable1["CC"] = "Colonel By Child Care Center";
+		hashTable1["DT"] = "Dunton Tower";
+		hashTable1["FH"] = "Field House";
+		hashTable1["FR"] = "Frontenac House";
+		hashTable1["GH"] = "Glengary House";
+		hashTable1["GR"] = "Grenville House";
+		hashTable1["GY"] = "Gymnasium"
+		hashTable1["HP"] = "Herzberg Building";
+		hashTable1["HC"] = "Human Computer Interaction Building";
+		hashTable1["LH"] = "Lanark House";
+		hashTable1["LE"] = "Leeds House";
+		hashTable1["LS"] = "Life Sciences Research Building";
+		hashTable1["LA"] = "Loeb Building";
+		hashTable1["LX"] = "Lennox and Addington House";
+		hashTable1["ME"] = "Mackenzie Building";
+		hashTable1["ML"] = "MacOdrum Library";
+		hashTable1["MB"] = "Maintenance Building";
+		hashTable1["MC"] = "Minto Center for Advanced Studies in Engineering (CASE)";
+		hashTable1["NB"] = "Nesbitt Biology Building";
+		hashTable1["NW"] = "National Wildlife Research Building";
+		hashTable1["PA"] = "Patterson Hall";
+		hashTable1["PG"] = "Parking Garage";
+		hashTable1["PH"] = "Prescott House";
+		hashTable1["RB"] = "River Building";
+		hashTable1["RH"] = "Renfrew House";
+		hashTable1["CO"] = "Residence Commons";
+		hashTable1["RO"] = "Robertson Hall";
+		hashTable1["RU"] = "Russell House";
+		hashTable1["SP"] = "St.Patrick's Building";
+		hashTable1["SR"] = "Social Science Research Building";
+		hashTable1["SA"] = "Southam Hall";
+		hashTable1["SC"] = "Steacie Building";
+		hashTable1["SD"] = "Stormont Dundas House";
+		hashTable1["TC"] = "Tennis Center";
+		hashTable1["TB"] = "Tory Building"
+		hashTable1["UC"] = "University Center";
+		hashTable1["VS"] = "Visualization & Simulation Building";
+	
+	
+	
+	//Store acronym in finalLocationAcr
+	var finalLocationAcr = prompt("Where would you like to go ?");		
+	  
+		//Check hashTable1 for acronym association
+		finalLocationFull = hashTable1[finalLocationAcr];
+		
+		if (!finalLocationFull){
+			//Invalid acronym. Output error and re-promt
+			alert("Please enter a valid building acronym.");
+			prompt("Where would you like to go ?");
+		}else {
+			//Valid acronym. Output building name 
+			alert("This is " + finalLocationFull);
+		}
+		
+		
+		
+		
+	</script>
+</html>
