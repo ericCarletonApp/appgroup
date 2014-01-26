@@ -52,17 +52,21 @@
 	//Store acronym in finalLocationAcr
 	var finalLocationAcr = prompt("Where would you like to go ?");		
 	  
-		//Check hashTable1 for acronym association
-		finalLocationFull = hashTable1[finalLocationAcr];
+	//Check hashTable1 for acronym association
+	finalLocationFull = hashTable1[finalLocationAcr];
 		
-		if (!finalLocationFull){
+		//Loop until valid building acronym is entered.
+		while (!finalLocationFull) {
+		
 			//Invalid acronym. Output error and re-promt
 			alert("Please enter a valid building acronym.");
-			prompt("Where would you like to go ?");
-		}else {
-			//Valid acronym. Output building name 
-			alert("This is " + finalLocationFull);
+			var finalLocationAcr = prompt("Where would you like to go ?");
+			finalLocationFull = hashTable1[finalLocationAcr];
 		}
+		
+		//Valid acronym. Output building name 
+		alert("This is " + finalLocationFull);
+		
 		
 		
 		
